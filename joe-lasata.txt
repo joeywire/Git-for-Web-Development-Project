@@ -84,16 +84,25 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
         5. Work on local repo, use git add and git commit -m to save frequently. 
         6. Push changes back to github repo 
         7. Submit a pull request on YOUR branch, and add TL to reviewers. 
-        8. Dont merge the pull request, thats for the TL after theyre done reviewing. 
-        
+        8. Dont merge the pull request, thats for the TL after they're done reviewing. 
+
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
+        A block element will take up all the width available and it always starts on a new line. i.e. <div>
+        An inline elemnt such as <span> or <a> does not start on a new line and only uses the width it needs. 
     2. What happens when an element is positioned absolutely? 
+        It is removed from the normal flow of the page and positoined realitve to the nearest positioned ancestor. If no ancestors are positioned it is relative to the body. 
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        by setting max-width to the maximum size. That way it can shrink with the window if needed but will not get too large if scaling out. 
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        Display block: <div>, <section>, <p>
+        Display inline: <span>, <a>
+        Display inline-block: <img> ???
     5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
-
+        The box model describes how all HTML elements are placed into boxes. So if you imagine your content as a rectangle, it is wrapped on all four sides by padding, then the border, then the margin. If I want space between the boarder and the content I would maniplate the padding. If I want to create space between two pieces of content (outside of their borders) I would use the margins. The issue with the box model is the padding, border and margin add width to the edges of you content. So it can take some math to get it all sorted out and organized. You can use the syntax below (border-box) to fix this, so regardless of how much padding, border, or margin you add it will scale your content down so it fits in thr dimentions you defined. 
+        
+        box-sizing: border-box; 
 
 
    --> 
