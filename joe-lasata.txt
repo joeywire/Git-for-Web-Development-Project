@@ -95,6 +95,7 @@ Stretch Questions
         It is removed from the normal flow of the page and positoined realitve to the nearest positioned ancestor. If no ancestors are positioned it is relative to the body. 
     3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
         by setting max-width to the maximum size. That way it can shrink with the window if needed but will not get too large if scaling out. 
+        setting display to inline-block 
     4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
         Display block: <div>, <section>, <p>
         Display inline: <span>, <a>
