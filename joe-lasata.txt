@@ -15,39 +15,77 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
     5. Name two tags that have required attributes
         <a> and <img>
     6. What do we put in the head of our HTML document? 
-        
+        The metadata for our site i.e. title, styles links, char set, etc. 
     7. What is an id? 
-    8. What elements can I add an id to? 
+        An id is a optional attribute of an html element
+    8. What elements can I add an id to?
+        use on any element
     9. How many times can I use the same id on a page? 
+        once
     10. What is a class? 
+        A class is a optional attribute of an html element
     11. What elements can I add a class to? 
+        Any HTML element
     12. How many times can I use the same class on a page? 
+        As many times as needed
     13. How do I get my link to open in a new tab?
+        <a href="" target="_blank"> target attribute = "_blank"
     14. What is the alt attribute in the image tag used for? 
+        Displaying text if the img is not available or a screen reader is being used 
     15. How do I reference an id?
+        #idName
     16. What is the difference between a section and a div
+        A section is a semantic element used to mark a specific section. Div is used to group content together for something other than semantic purporses - like styling. 
     17. What is CSS used for? 
+        CSS is used to style the web page
     18. How to we select an element? Example - every h2 on the page
+        h2 {}, select it with the element name, class, or id. 
     19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        An id is unique and usually used to point to a specific/singular part of the page. Class is a broader identifier and can be used to group multiple elements then style them the same way. 
     20. How do we select classes in CSS?
+        .className
     21. How do we select a p element with a single class of “human””?
+        .human p {}
     22. What is a parent child selector? When would this be useful? 
+        A way of selecting child elements that are descendants of a specified parent element. So I could select all the links in my header without styling the links in my article for example. 
     23. How do you select all links within a div with the class of sidebar?
+        .sidebar a {}
     24. What is a pseudo selector?
+        a selector with a colon before them. Used to style elements that meet a certain criteria. 
     25. What do we use the change the spacing between lines?
+        line-height property 
     26. What do we use to change the spacing between letters?
+        letter-spacing property
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        text-transform: uppercase; text-transform: lowercase; text-transform: capitalize. 
     28. How do I add a 1px border around my div that is dotted and black?
+        border: 1px dotted black;
     29. How do I select everything on the page? 
+        universal selector, * {}
     30. How do I write a comment in CSS?
+        /* comment here */
     31. How do I find out what file I am in, when I am using the command line? 
+        print working directory -- $ pwd
     32. Using the command line - how do I see a list of files/folders in my current folder?
+        ls command, add -a to see all files 
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        rm "file_name", this is permenant, it does not go to your trash/ recycling
     34. Why should I use version control? 
+        It keeps track of all the changes made to a repo so you can revert back to a previous version easily. Also allows for parallel working across a large team. 
     35. How often should I commit to github?
+        Upon completing a specific task/ fixing a certain problem. When in doubt commit more often. 
     36. What is the command we would use to push our repo up to github? 
+        $ git push
     37. Walk me through Lambda's git flow. 
-
+        1. Fork the repo
+        2. Add TL as a collaborator
+        3. Clone repo to local directory you want to work out of. navigate into directory you just cloned. 
+        4. Create a branch - name it firstName-lastName
+        5. Work on local repo, use git add and git commit -m to save frequently. 
+        6. Push changes back to github repo 
+        7. Submit a pull request on YOUR branch, and add TL to reviewers. 
+        8. Dont merge the pull request, thats for the TL after theyre done reviewing. 
+        
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
